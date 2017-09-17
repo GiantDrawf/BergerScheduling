@@ -19,7 +19,7 @@ ul li{
 	padding: 10px;
 	margin : 20px 0px 0px 20px ;
 	float : left;
-	width : 70%;
+	width : 80%;
 }
 .backstyle{
 	margin-bottom: 15px;
@@ -44,5 +44,6 @@ ul li{
 .line{
 	border-right: 1px solid #e80d0d;
     height: 14px;
-    margin: 2px 86px 2px 0px;
+    margin: 2px 0px 2px 0px;
+    width: 50%;
 }
