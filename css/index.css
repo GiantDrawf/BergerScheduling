@@ -1,0 +1,48 @@
+ul li{  
+	list-style-type:none;  
+}  
+.group-length{
+	width:50%;
+	margin: 0 auto;
+}
+.input-length{
+	width: 60%;
+}
+.test{
+	color: red;
+}
+.group-list{
+	width:15%;
+	float: left;
+}
+.show-results{
+	padding: 10px;
+	margin : 20px 0px 0px 20px ;
+	float : left;
+	width : 70%;
+}
+.backstyle{
+	margin-bottom: 15px;
+	background-color:#272a33;
+	border-radius: 10px;
+	color: white;
+}
+.listHead{
+	font-size: 20px;
+	color: #3f00ff;
+	font-weight: bolder;
+}
+.rounds-list{
+	font-size: 30px;
+	font-weight: bold;
+}
+.battle-group{
+	font-size: 17px;
+    width: 23%;
+    display: inline-block;
+}
+.line{
+	border-right: 1px solid #e80d0d;
+    height: 14px;
+    margin: 2px 86px 2px 0px;
+}
