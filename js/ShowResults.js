@@ -4,11 +4,7 @@
 **teams : 参赛队伍数组，这里我已经初始化了一部分参赛队伍
 */
 function clean(){
-<<<<<<< HEAD
-	document.getElementById('name').value = "";
-=======
     document.getElementById('name').value = "";
->>>>>>> gh-pages
 }
 window.onload = function(){
     var teams = ['华北电力大学','北京交通大学','南京信息工程大学','南京林业大学','复旦大学','北京人民大学','河北大学','EDG','RNG'];
