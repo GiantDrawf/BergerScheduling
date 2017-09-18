@@ -19,7 +19,7 @@ function BergerScheduling(teamArray) {
 	//参赛队伍是偶数则返回数组长度为numberTeam-1,奇数的话长度就是numberTeam
     var rounds = new Array(numOfTeam % 2 == 0 ? numOfTeam - 1 : numOfTeam);
     //转动间隔数  
-    var jump = parseInt((numOfTeam-numOfTeam%2-4)/2);
+    var jump = parseInt((numOfTeam+numOfTeam%2-4)/2);
     //将数组编排成左右两竖排U型
     var divide = numOfTeam%2==0?numOfTeam/2:parseInt(numOfTeam/2)+1;
     //左侧
@@ -48,8 +48,8 @@ function BergerScheduling(teamArray) {
             left.shift();
             moveToleft = right.slice(0,jump+2).reverse();
             moveToRight = left.slice(-jump-1).reverse();                       
-            left = moveToleft.concat(left.slice(0,left.length-jump-1));
-            right = right.slice(jump+2).concat(moveToRight);
+            left = moveToleft;
+            right = moveToRight;
             right.unshift(fixed);            
         }else{//第偶次转换
             right.shift();
@@ -60,5 +60,5 @@ function BergerScheduling(teamArray) {
             right = right.slice(jump).concat(moveToRight);
         }
     } 
-    return rounds;    
+    return rounds;  
 }
